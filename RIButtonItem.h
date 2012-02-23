@@ -19,5 +19,6 @@ typedef void (^RISimpleAction)();
 @property (copy, nonatomic) RISimpleAction action;
 +(id)item;
 +(id)itemWithLabel:(NSString *)inLabel;
++(id)itemWithLabel:(NSString *)inLabel action:(RISimpleAction)inAction;
 @end
 

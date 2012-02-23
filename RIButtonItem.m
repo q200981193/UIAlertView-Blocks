@@ -24,6 +24,13 @@
     return newItem;
 }
 
++(id)itemWithLabel:(NSString *)inLabel action:(RISimpleAction)inAction
+{
+    id newItem = [self itemWithLabel:inLabel];
+    [newItem setAction:inAction];
+    return newItem;
+}
+
 -(void)dealloc
 {
     [action release];
